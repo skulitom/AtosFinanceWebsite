@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [HTML5 Boilerplate](https://html5boilerplate.com)
 
 [![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
@@ -91,3 +92,6 @@ the [guidelines](CONTRIBUTING.md):
 ## License
 
 The code is available under the [MIT license](LICENSE.txt).
+=======
+# AtosFinanceWebsite
+>>>>>>> 7d8564195146bdc0b7e509f9482aba40b272e0f8

@@ -19,9 +19,9 @@ body {
     margin: 0;
     height: 100%;
     padding-top: 70px;
-    background: #4CA1AF; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5);
-    background: linear-gradient(to left, #4CA1AF , #C4E0E5);
+    background: #999999; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #999999 , #cccccc);
+    background: linear-gradient(to left, #999999 , #cccccc);
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -53,16 +53,32 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    color: #000000;
+    background-color: #000000;
 }
 
-.jumbotron-extender{
+#header-image{
+
+}
+
+.jumbotron{
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.jumbotron-extender {
+    padding: -5em;
     text-align: center;
+}
+
+.jumbotron-extender:hover{
+    background-color: rgba(50, 100, 255,0.7);
 
 }
 
-.jumbotron-extender :hover{
-    background-color: rgb(85, 85, 85);
-
+#atos-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main-body{

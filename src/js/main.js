@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $(".jumbotron-extender").click(function(){
+    $("#about-us").click(function(){
         $("#main-body").slideToggle("slow");
     });
 });
 
 document.getElementById("navMenu").innerHTML =
-    '<nav class="navbar navbar-default navbar-fixed-top">'+
+    '<nav class="navbar navbar-inverse navbar-fixed-top">'+
     '<div class = "container-fluid">'+
     '<div class = "navbar-header">'+
     '<a class="navbar-brand active" href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a>'+

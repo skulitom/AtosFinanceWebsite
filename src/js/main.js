@@ -1,35 +1,44 @@
 $(document).ready(function(){
-    $("#about-us").click(function(){
-        $("#main-body").slideToggle("slow");
+    $("#extender1").click(function(){
+        $("#extended1").slideToggle("slow");
     });
+    $("#extender2").click(function(){
+        $("#extended2").slideToggle("slow");
+    });
+    $("#extender3").click(function(){
+        $("#extended3").slideToggle("slow");
+    });
+    $("#extender4").click(function(){
+        $("#extended4").slideToggle("slow");
+    });
+});
+
+$(function(){
+    $("#header").load("other/header.html");
+    $("#footer").load("other/footer.html");
 });
 
 document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+
     '<div class = "container-fluid">'+
     '<div class = "navbar-header">'+
-    '<a class="navbar-brand active" href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a>'+
+    '<a class="navbar-brand active" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>'+
     '</div>'+
     '<ul class="nav navbar-nav">'+
     '<li>'+
     '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Background' +
-    '<span class = "caret"></span></a>'+
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Project' +
-    '<span class = "caret"></span></a>'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="gglyphicon glyphicon-cog"></span> Project' +
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-calendar"></span> Prototype' +
-    '<span class = "caret"></span></a>'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
     '</li>'+
     '<li>'+
     '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-pushpin"></span> Development' +
-    '<span class = "caret"></span></a>'+
     '</li>'+
     '<li>'+
     '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-calendar"></span> Plans' +
-    '<span class = "caret"></span></a>'+
     '</li>'+
     '</ul>'+
     '</div>'+

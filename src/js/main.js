@@ -13,11 +13,6 @@ $(document).ready(function(){
     });
 });
 
-$(function(){
-    $("#header").load("other/header.html");
-    $("#footer").load("other/footer.html");
-});
-
 document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+
     '<div class = "container-fluid">'+

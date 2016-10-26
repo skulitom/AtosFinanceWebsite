@@ -76,6 +76,43 @@ hr {
 
 }
 
+
+.bg-1{
+    background: #999999; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #999999 , #cccccc);
+    background: linear-gradient(to left, #999999 , #cccccc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+.bg-2{
+    background: #999999; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #999999 , #cccccc);
+    background: linear-gradient(to left, #999999 , #cccccc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+.bg-3{
+    background: #999999; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #999999 , #cccccc);
+    background: linear-gradient(to left, #999999 , #cccccc);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+.bg-4 {
+    background: #2f2f2f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2f2f2f , #2f2f2f);
+    background: linear-gradient(to left, #2f2f2f , #2f2f2f);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
 #atos-image{
     display: block;
     margin-left: auto;

@@ -66,12 +66,12 @@ hr {
     width: 100%;
 }
 
-.jumbotron-extender {
+.extender {
     padding: -5em;
     text-align: center;
 }
 
-.jumbotron-extender:hover{
+.extender:hover{
     background-color: rgba(50, 100, 255,0.7);
 
 }

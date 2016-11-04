@@ -21,19 +21,19 @@ document.getElementById("navMenu").innerHTML =
     '</div>'+
     '<ul class="nav navbar-nav">'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-education"></span> Background' +
+    '<a href="Background.html"><span class="glyphicon glyphicon-education"></span> Background' +
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="gglyphicon glyphicon-cog"></span> Project' +
+    '<a href="Project.html"><span class="gglyphicon glyphicon-cog"></span> Project' +
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
+    '<a href="Prototype.html"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-pushpin"></span> Development' +
+    '<a href="Development.html"><span class="glyphicon glyphicon-pushpin"></span> Development' +
     '</li>'+
     '<li>'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-calendar"></span> Plans' +
+    '<a href="Plans.html"><span class="glyphicon glyphicon-calendar"></span> Plans' +
     '</li>'+
     '</ul>'+
     '</div>'+

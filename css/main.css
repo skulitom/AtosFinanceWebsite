@@ -27,6 +27,23 @@ body {
 
 }
 
+h1 {
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+p {
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 
 
 /*
@@ -59,6 +76,29 @@ hr {
 
 #header-image{
 
+}
+/*
+#navMenu{
+    font-family: 'Itim', cursive;
+    font-size: 1.3em;
+}
+*/
+
+#footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+.panel-heading{
+    font-family: 'Itim', cursive;
+    font-size: 2em;
+}
+
+.panel-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    padding: 2em;
 }
 
 .jumbotron{

@@ -3,12 +3,14 @@
     <head id="header">
         <title>ATOS Finance</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
         <script>
             $('#header').load('other/header.html')
         </script>
     </head>
     <body>
-        <div class="container-fluid body-top bg-1">
+    <script>$.backstretch(['mountains.jpg']);</script>
+        <div class="container-fluid body-top bg-2">
             <div id="navMenu"></div>
                 <div id="header-image">
                       <img src="atos.png" class="img-rounded" id="atos-image" alt="atos">
@@ -43,10 +45,10 @@
             <!-- end main text-->
 
             <!--footer starts-->
-            <div id="footer"></div>
-            <script>
-                $('#footer').load('other/footer.html')
-            </script>
         </div>
+        <div id="footer"></div>
+        <script>
+            $('#footer').load('other/footer.html')
+        </script>
     </body>
 </html>

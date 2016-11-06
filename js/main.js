@@ -13,6 +13,8 @@ $(document).ready(function(){
     });
 });
 
+
+
 document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+
     '<div class = "container-fluid">'+

@@ -85,6 +85,7 @@ hr {
 
 #footer{
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 500px 0px 500px #0f0f0f;
     font-size: 0.8em;
 }
 

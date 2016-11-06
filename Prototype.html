@@ -3,13 +3,18 @@
 <head id="header">
     <title>Prototype</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
     <script>
         $('#header').load('other/header.html')
     </script>
 </head>
 <body>
-<div class="container-fluid body-top bg-1">
-    <div id="navMenu"></div>
+<script>$.backstretch(['img/mountains.jpg','img/port.jpg','img/bath.jpg','img/swanage.jpg'], {duration: 20000, fade: 1000});</script>
+<div id="navMenu"></div>
+<div class="container-fluid body-top bg-2">
+    <div id="header-image">
+        <img src="img/atos.png" class="img-rounded" id="atos-image" alt="atos">
+    </div>
     <hr>
 </div>
 <div class="container-fluid bg-2 text-center">
@@ -18,7 +23,9 @@
     <div class="panel panel-primary" id="extender1">
         <div class="panel-heading extender">Paper Prototype</div>
         <div class="panel-body" id="extended1">
-            <p>Hello</p>
+            <p>Our group called ATOS Finance team 18 is a team of second year computer scientist, we were
+                assigned to do a group project with atos for our module COMP204P. In this module we are given a
+                real world problem that we are supposed to solve for a company allocated... </p>
         </div>
     </div>
 
@@ -38,10 +45,10 @@
     <!-- end main text-->
 
     <!--footer starts-->
-    <div id="footer"></div>
-    <script>
-        $('#footer').load('other/footer.html')
-    </script>
 </div>
+<div id="footer"></div>
+<script>
+    $('#footer').load('other/footer.html')
+</script>
 </body>
 </html>

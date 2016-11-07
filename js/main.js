@@ -19,8 +19,15 @@ document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+
     '<div class = "container-fluid">'+
     '<div class = "navbar-header">'+
+    '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#heading" aria-expanded="false">'+
+        '<span class="sr-only">Toggle navigation</span>'+
+        '<span class="icon-bar"></span>'+
+        '<span class="icon-bar"></span>'+
+        '<span class="icon-bar"></span>'+
+      '</button>'+
     '<a class="navbar-brand active" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>'+
     '</div>'+
+    '<div class="collapse navbar-collapse" id="heading">'+
     '<ul class="nav navbar-nav">'+
     '<li>'+
     '<a href="Background.html"><span class="glyphicon glyphicon-education"></span> Background' +
@@ -38,5 +45,6 @@ document.getElementById("navMenu").innerHTML =
     '<a href="Plans.html"><span class="glyphicon glyphicon-calendar"></span> Plans' +
     '</li>'+
     '</ul>'+
+    '</div>'+
     '</div>'+
     '</nav>';

@@ -35,6 +35,12 @@ h1 {
     font-weight: 500;
     line-height: 26.4px;
 }
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em;
+}
 p {
     font-family: Tahoma,Verdana,Segoe,sans-serif;
     font-size: 1.1em;
@@ -63,7 +69,7 @@ p {
  * A better looking default horizontal rule
  */
 
-hr {
+.hr-white {
     margin: 1em 0;
     padding: 0;
     border: 0;
@@ -71,6 +77,14 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8));
     color: #ffffff;
     background-color: #ffffff;
+}
+
+hr {
+    margin: 1em 0;
+    padding: 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 #header-image{
@@ -144,7 +158,7 @@ hr {
     background: linear-gradient(to left, #2f2f2f , #2f2f2f);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.95;
+    opacity: 0.93;
     color: #000000;
 }
 

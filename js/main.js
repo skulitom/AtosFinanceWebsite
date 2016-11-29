@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 });
 
-
+    
 
 document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+

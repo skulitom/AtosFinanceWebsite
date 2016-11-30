@@ -131,6 +131,10 @@ hr {
     padding: 2em;
 }
 
+.text-intro{
+    text-align: center;
+}
+
 .panel-primary{
     z-index: 2;
 }

@@ -117,7 +117,7 @@ hr {
 }
 
 .container-fluid{
-    width: 90%;
+    width: 80%;
 }
 .panel-heading{
     font-family: 'Itim', cursive;
@@ -143,6 +143,8 @@ hr {
 .extender {
     padding: -5em;
     text-align: center;
+    opacity: 1.0;
+    background-color: rgba(1, 1, 1, 1)
 }
 
 .extender:hover{
@@ -166,7 +168,7 @@ hr {
     background: linear-gradient(to left, #2f2f2f , #2f2f2f);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.93;
+    opacity: 1;
     color: #000000;
 }
 

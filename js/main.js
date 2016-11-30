@@ -5,15 +5,16 @@ $(document).ready(function(){
     $("#extender2").click(function(){
         $("#extended2").slideToggle("slow");
     });
+    $("#extended2").slideToggle("slow");
     $("#extender3").click(function(){
         $("#extended3").slideToggle("slow");
     });
+    $("#extended3").slideToggle("slow");
     $("#extender4").click(function(){
         $("#extended4").slideToggle("slow");
     });
+    $("#extended4").slideToggle("slow");
 });
-
-    
 
 document.getElementById("navMenu").innerHTML =
     '<nav class="navbar navbar-inverse navbar-fixed-top">'+
@@ -48,3 +49,10 @@ document.getElementById("navMenu").innerHTML =
     '</div>'+
     '</div>'+
     '</nav>';
+
+$(document).ready(function(){
+    var containerF = $('.container-fluid')
+    var bg2 = $('.bg-2')
+    bg2.animate({opacity: '0.93'}, "slow");
+    containerF.animate({width: '90%'}, "slow");
+});

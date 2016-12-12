@@ -196,11 +196,20 @@
                 this would involve venerable and important data which should not be mishandled by the application and
                 everything should perform as expected.
                 <br><br>
-                To test our application, we are going to use first of all use NUnit and Moq to do the unit tests. NUnit and Moq are one of the most famous unit
-                testing frameworks available for C#
+                To test our application, we are going to first of all use NUnit and Moq to do the unit tests. NUnit and Moq are one of the most famous unit
+                testing frameworks available for C#. Coincidentally Xamarin has an API that we are going to be able to use to perform NUnit tests, this API is called
+                Xamarin.UITest which basically contains a main entry point for application testing.
                 <br><br>
                 When testing the database, we are not going to have direct access to the actual database so instead we would be testing our SQLite code.
                 We are planning to use moq unit test in order to test SQLite.
+                <br><br>
+                User acceptance tests are very important parts of agile development so we are planning to embrace them to the full. We aim to begin regularly
+                incorporating user acceptance testing into our Scrum sprints as soon as we have completed the user interface in the front-end, and interaction
+                with the system becomes possible. We are planning to deliver user-acceptance tests to our clients on a regular basis so that our clients can take
+                these tests into account when considering ways in which we can improve our application for the better.
+                <br><br>
+                One of our key considerations is security due to the data that we&#39re handling and processing. To ensure the security a lot of testing would
+                have to be done security wise to make sure that problems that are due for example to SQL injection would not be allowed to occur.
                 <br><br>
 
             </p>

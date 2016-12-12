@@ -27,6 +27,11 @@ body {
 
 }
 
+iframe{
+    display:block;
+    text-align:center;
+}
+
 h1 {
     font-family: Tahoma,Verdana,Segoe,sans-serif;
     font-size: 3em;
@@ -86,6 +91,7 @@ table{
     color: #ffffff;
     background-color: #ffffff;
 }
+
 
 hr {
     margin: 1em 0;

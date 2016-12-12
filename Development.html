@@ -149,7 +149,7 @@
         <div class="panel-body" id="extended2">
             <h3>Git</h3>
             <hr>
-            <p>We have decided to use git as our version control system, there are many reasons o why we came to such a decistion:
+            <p>We have decided to use git as our version control system, there are many reasons o why we came to such a decision:
             <ul>
                 <li>Everyone in the team is familiar with it</li>
                 <li>There is a lot of information about it</li>
@@ -161,14 +161,21 @@
             </p>
             <h3>Xamarin</h3>
             <hr>
-            <p>We have decided to use Xamarin for our development as it allows multiplatform development...</p>
+            <p>We have decided to use Xamarin for our development as it allows multiplatform development. Xamarin apps have access to
+                comprehensive range of functionality which  includes platform-centric capabilities sich as iBeacons and Android Fragments.
+            Xamarin applications are compiled for native performance so there are no underlying issues with performance on a specific platform.
+            Another benefit to using Xamarin is Xamarin forms which is an api that allows a developer to build user interfaces, interfaces designed using Xamarin.Forms
+            require much less time to develop so our team could concentrate on other parts of the project.</p>
             <h3>Visual Studio</h3>
             <hr>
-            <p>Visual Studio is the IDE that we are planning to use for the project. Visual studio intergrates directly with Xamarin and
-            lately its development is possible both on a mac and a windows computer...</p>
+            <p>Visual Studio is the IDE that we are planning to use for the project. Visual studio integrates directly with Xamarin and
+            lately its development is possible both on a mac and a windows computer which is perfect for our team as we have mac and windows users
+            on the team.</p>
             <h3>C#</h3>
             <hr>
-            <p>C# is an object orientated language that is implimented by Xamarin for app design...</p>
+            <p>C# is a powerful object orientated language that was based on .net. There are more reasons to using C# other then the fact that it is
+            used in Xamarin application development. C# is a very type safe language which would mean fewer type related errors, it has a large library of functions
+            which could be easily implemented by a programmer and there is no need to worry about memory leaks happening unlike C++.</p>
             <h3>SQLite</h3>
             <hr>
             <p>From all of our conversations with the client it looks like we are not going to have access to the
@@ -181,38 +188,56 @@
     <div class="panel panel-primary">
         <div class="panel-heading extender" id="extender3">Testing</div>
         <div class="panel-body" id="extended3">
-            <h3>Tools</h3>
-            <hr>
-            <p>Selenium</p>
             <h3>Testing Strategy</h3>
             <hr>
-            <p><b>Unit Testing</b>
+            <p>
+                When we have started gathering requirements form our client we have realized the importance of testing.
+                This project would later on ideally be integrated into the back-end of National Savings and Investments,
+                this would involve venerable and important data which should not be mishandled by the application and
+                everything should perform as expected.
                 <br><br>
-                <b>Functional Testing</b>
+                To test our application, we are going to use first of all use NUnit and Moq to do the unit tests. NUnit and Moq are one of the most famous unit
+                testing frameworks available for C#
                 <br><br>
-                <b>Integration Testing</b>
+                When testing the database, we are not going to have direct access to the actual database so instead we would be testing our SQLite code.
+                We are planning to use moq unit test in order to test SQLite.
                 <br><br>
-                <b>User Acceptance Testing</b>
-                <br><br>
-                <b>Testing C#</b>
-                <br><br>
-                <b>Black Box and White Box Testing</b>
-                <br><br></p>
+
+            </p>
+            <ul>
+                <li>Create a more stable application</li>
+                <li>More features would be accessible to the user</li>
+                <li>Fewer bugs</li>
+                <li>Fulfilling client requirements</li>
+                <li>Better stability</li>
+
+            </ul>
         </div>
     </div>
 
     <div class="panel panel-primary">
         <div class="panel-heading extender" id="extender4">Collaboration</div>
         <div class="panel-body" id="extended4">
-            <h3>Slack</h3>
+            <h3>Applications</h3>
             <hr>
-            <img src="img/Slack.PNG" class="img-rounded img-responsive" id="slack-image" alt="slack">
-            <h3>Google Drive</h3>
-            <hr>
-            <img src="img/Googledrive.PNG" class="img-rounded img-responsive" id="googledrive-image" alt="googledrive">
-            <h3>Whatsapp</h3>
-            <hr>
-            <img src="img/Whatsapp.PNG" class="img-rounded img-responsive" id="whatsapp-image" alt="whatsapp">
+            <img src="img/Slack.PNG" class="img-rounded img-responsive col-sm-2" id="slack-image" alt="slack">
+            <p>Slack was one of the obvious choices for our group when it came to collaboration. Basic functions such as messaging to someone to ask for help
+            or collaboration is included and at the same time slack facilitates a capability of using different channels. We were able to set-up multiple channels
+            where one could be used to announce any progress that we have made to teammates and the client and another to arrange group meetings.</p>
+            <br><br>
+            <img src="img/Googledrive.PNG" class="img-rounded img-responsive col-sm-2" id="googledrive-image" alt="googledrive">
+            <p>We have decided to keep all of our documentation on google drive, using folders and different documents we were able to sort and organise all of
+            our documentation for the project. The files are automatically saved and the documents are not reliant on one member of the team to be kept and updated.
+            Google drive also allowed us to simultaneously work on one report which saved a lot of our time. </p>
+            <br><br>
+            <img src="img/Trello.PNG" class="img-rounded img-responsive col-sm-2" id="whatsapp-image" alt="whatsapp">
+            <p>Trello is a free of charge web-based project management application that uses boards to give a quick overview of the tasks we have completed and have
+                yet to be completed. On these tasks we can set someone that is responsible and give a certain deadline for it. Our reason for picking Trello as one
+                of our mode of communications as it has integrations with github and slack making changes in any mode available in all so that we can make sure that
+                nothing is missed. Also as students, we noticed during such projects it was difficult to find time for the whole team to sit down and discuss the
+                project. Hence, when approaching this project we would update trello daily to keep everyone informed and also for everyone to keep track of their
+                tasks at hand. Trello also sends out notifications when deadlines are near saving us the hassle of chasing a certain team member for the work for updates.
+                Also if due to some circumstances it cannot be finished in time the workload can be easily shared among the team.</p>
         </div>
     </div>
     <!-- end main text-->

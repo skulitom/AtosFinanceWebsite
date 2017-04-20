@@ -26,6 +26,10 @@ $(document).ready(function(){
         $("#extended7").slideToggle("slow");
     });
     $("#extended7").slideToggle("slow");
+    $("#extender8").click(function(){
+        $("#extended8").slideToggle("slow");
+    });
+    $("#extended8").slideToggle("slow");
 });
 
 document.getElementById("navMenu").innerHTML =

@@ -382,7 +382,99 @@
             </p>
         </div>
     </div>
-
+    <div class="panel panel-primary">
+        <div class="panel-heading extender" id="extender8">Design</div>
+        <div class="panel-body" id="extended8">
+            <h3>UML Class Diagram</h3>
+            <hr>
+            <img src ="img/uml.png" class="img-responsive"/>
+            <h3>Sequence Diagram</h3>
+            <hr>
+            <p>Please click one of the links below to see the diagram:
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/0B4zo9IqkK5wsZnRMeWl2dTVCV1k/view?usp=sharing">Web Application Views Syndicate</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B4zo9IqkK5wscGpnd2s1RWh0Zzg/view?usp=sharing">Web Application Manager</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B4zo9IqkK5wsWEtYNEI3aVFGWEk/view?usp=sharing">View Savings Account</a></li>
+                </ul>
+            </p>
+            <h3>System Architecture</h3>
+            <hr>
+            <ul>
+                <li>Mobile App</li>
+                    <ul>
+                        <li>The mobile app is implemented in Xamarin using an API that is hosted on Heroku which allows us to interact with the PostGreSQL backend. The app implements the model-view-controller pattern by default as a result of its use of Xamarin Forms with RestService.</li>
+                    </ul>
+                <li>Web App</li>
+                    <ul>
+                        <li>The web app is implemented in Django, using a PostGreSQL backend hosted on Heroku. The app implements the model-view-controller pattern by default as a result of its use of Django.</li>
+                    </ul>
+                <li>REST API</li>
+                    <ul>
+                        <li>The API exposes the models in our database to CRUD operations from other applications very easily</li>
+                        <li>Made very easy through use of django_rest_framework</li>
+                        <li>Data is exchanged using JSON</li>
+                        <li>The API implements authentication using user tokens</li>
+                    </ul>
+                <li>Database(main models)</li>
+                    <ul>
+                                <li>Users</li>
+                                    <ul>
+                                        <li>Username</li>
+                                        <li>Password</li>
+                                        <li>Name</li>
+                                        <li>Email</li>
+                                    </ul>
+                                <li>UserProfiles</li>
+                                    <ul>
+                                        <li>Winnings</li>
+                                        <li>Language</li>
+                                        <li>Security Question and Answer</li>
+                                    </ul>
+                                <li>PremiumBonds</li>
+                                    <ul>
+                                        <li>GroupOwned - boolean to differentiate between sole owned and group owned bonds</li>
+                                        <li>GroupOwner - if group owned this will point to syndicate that owns the bonds, otherwise NULL</li>
+                                        <li>UserOwner - whether group owned or not, this will point to the user that was responsible for purchasing the bond</li>
+                                        <li>Winnings - How much the bond has won so far</li>
+                                        <li>Live - Whether or not the bond is eligible for reward</li>
+                                    </ul>
+                                <li>Accounts</li>
+                                    <ul>
+                                        <li>Owner - User who owns the account</li>
+                                        <li>Balance - balance on account in Pounds</li>
+                                        <li>ProductInfo - information about account type</li>
+                                    </ul>
+                                <li>ProductInfo</li>
+                                    <ul>
+                                        <li>Name - branded name (i.e. direct saver, income bonds etc.)</li>
+                                        <li>Description - user friendly description for app UI</li>
+                                        <li>InterestRate</li>
+                                        <li>PayoutPeriod - how often interest is paid</li>
+                                        <li>MinimumDeposit</li>
+                                    </ul>
+                                <li>Syndicates</li>
+                                    <ul>
+                                        <li>Owner - user who established the group</li>
+                                        <li>Name</li>
+                                        <li>Members - ManyToMany relationship with users, the members of the syndicate</li>
+                                        <li>Winnings - Total group winnings</li>
+                                    </ul>
+                                <li>UserSyndicateWinnings</li>
+                                    <ul>
+                                        <li>User </li>
+                                        <li>Syndicate</li>
+                                        <li>Winnings - sum of all the winnings awarded to an individual user within an individual syndicate</li>
+                                    </ul>
+                                <li>BondRewards</li>
+                                    <ul>
+                                        <li>PremiumBond</li>
+                                        <li>Date</li>
+                                        <li>RewardAmount - A way of keeping track of which bonds won and when</li>
+                                    </ul>
+                    </ul>
+            </ul>
+        </div>
+    </div>
     <div class="panel panel-primary">
         <div class="panel-heading extender" id="extender2">Frameworks & Languages</div>
         <div class="panel-body" id="extended2">

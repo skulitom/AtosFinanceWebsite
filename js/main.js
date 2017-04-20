@@ -18,6 +18,14 @@ $(document).ready(function(){
         $("#extended5").slideToggle("slow");
     });
     $("#extended5").slideToggle("slow");
+    $("#extender6").click(function(){
+        $("#extended6").slideToggle("slow");
+    });
+    $("#extended6").slideToggle("slow");
+    $("#extender7").click(function(){
+        $("#extended7").slideToggle("slow");
+    });
+    $("#extended7").slideToggle("slow");
 });
 
 document.getElementById("navMenu").innerHTML =
@@ -41,13 +49,16 @@ document.getElementById("navMenu").innerHTML =
     '<a href="Project.html"><span class="gglyphicon glyphicon-cog"></span> Project' +
     '</li>'+
     '<li>'+
-    '<a href="Prototype.html"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
+    '<a href="Plans.html"><span class="glyphicon glyphicon-calendar"></span> Plans' +
     '</li>'+
     '<li>'+
     '<a href="Development.html"><span class="glyphicon glyphicon-pushpin"></span> Development' +
     '</li>'+
     '<li>'+
-    '<a href="Plans.html"><span class="glyphicon glyphicon-calendar"></span> Plans' +
+    '<a href="Prototype.html"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
+    '</li>'+
+    '<li>'+
+    '<a href="Solution.html"><span class="glyphicon glyphicon-asterisk"></span> Solution' +
     '</li>'+
     '</ul>'+
     '</div>'+

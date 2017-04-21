@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head id="header">
+    <title>Solution</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+    <script>
+        $('#header').load('other/header.html')
+    </script>
+</head>
+<body>
+<script>$.backstretch(['img/mountains.jpg','img/port.jpg','img/bath.jpg','img/swanage.jpg'], {duration: 20000, fade: 1000});</script>
+<div id="navMenu"></div>
+<div class="container-fluid body-top bg-2">
+</div>
+<div class="container-fluid bg-2 text-center">
+
+    <!-- main text-->
+    <div class="panel panel-primary">
+        <div class="panel-heading extender" id="extender1">The Mobile App</div>
+        <div class="panel-body" id="extended1">
+            <ul>
+                <h2>Logging in and Signing up</h2>
+                <ul>
+                    <li>The mobile app implements a landing page where a user is brought to when he first opens up the application. We have built this page to provide the user with a simple username and password textbox and a login button below. If the button is clicked, we first check if the two fields are filled and if they are we create a user object assigning it with the provided details and using a JSON package provided to us by nuget we serialize this object and send a POST request to the api we have built. If the details are incorrect users will be prompted with an error message below the login button to enter the correct details. Upon successful response, we receive a token which will then be used for all subsequent api calls to the database for authentication purposes. The user is also redirected to the homepage where he sees a welcome message and a list of his current accounts. If he has none he will only see the message.</li>
+                </ul></li>
+                <h2>Managing accounts</h2>
+                <ul>
+                    <li>We have an accounts page that is accessible for the  navigation bar that is available on every page. When users click on the accounts page they would have already been logged in and hence, have an authorization token.This token is used to make an asynchronous GET call to the api which returns the accounts related to the users token. These are then displayed on the contentpage using a listview which is surrounded by a scrollview. Any account in the list can then be clicked on to see more information on the account, deposit/withdraw/transfer money to or from the account and also check the transaction history of the account. A user clicking on any of these functions would be redirected to another page where they will be asked to key the required details. For example, for transactions users will require to set a start and end date and once set they will see all transactions made between those dates through a GET call to the api that returns a list of all transaction. These transaction items are displayed in a listview, after being filtered for those within the date range, with each item will display the kind of transaction amount and short description on it. Also for deposit/withdraw amount is required amount is entered a POST request is made to the server that responds with a successful response or not. ACcordingly it is displayed in the form of a message below the submit button after the request has been processed.</li>
+                </ul></li>
+                <h2>Registering for NS&Is full range of products</h2>
+                <ul>
+                    <li>Users can go to the products page provide by the application to browse through all the product offered by NS&I. This page is populated by making a GET request to the api every time the user accesses the page which returns a List of products which is populated to the listview of the page on appearing. If a user decides he wishes to open an account with a specific product then he/she can go into the products page where they will find a brief description of the product and at the bottom of the page a link to NS&Is website for more information and a button to register for the product. Registration of the product is achieved by sending a POST request to the api with the product id and in return we get either a successful or failure response. Accordingly we display a message to the user at the bottom of the page. By registering for the account this gives the user to perform actions on it however, it won't be active till the user hits the minimum limit of the account whatever it may be after which the user's balance will be eligible for the perks the account has to offer.</li>
+                </ul></li>
+                <h2>Managing personal information kept with NS&I</h2>
+                <ul>
+                    <li>In the application we have a settings page whereby users are given the ability to change any personal information that has been held with NS&I. Users are given the responsibility to keep this information up to date as this will be used in the creating of accounts and any interactions the user may have with NS&I. In each of the pages excluding password and security question the user is displayed with what the current variable is set to. In every page they are given the ability to change that by sending a PUT request to the api that either gives a successful or failure response which is then displayed on the screen in terms of a message below the submit button for the user's information. </li>
+                </ul></li>
+                <h2>Managing sole and shared premium bonds</h2>
+                <ul>
+                    <li>Just like accounts we have the same for sole owned and shared premium bonds where you see all relevant information of the account. This achieved through a GET request to the api that will return the details. Extra functionalities to share premium bonds would be the ability to manage the group however, this access is only given to the owner of the group and if the owner leaves the group the group will then be deleted and any investments or winnings will then be credited back to the users balance. When carrying out any actions since we are sending the token of the users to the api for authentication purposes so it is there where we check for the users rights. Similar to other response we inform the users through message labels on the page. We also replicate the already implemented functionality of being able to check if your current bonds have won. In a shared group winnings are calculated by the proportion of investment the user has made to all investments in that group. Total winnings and balance can be checked in the settings page which is kept track of by the database so a GET request will display that information.</li>
+                </ul></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading extender" id="extender2">The Webapp Frontend</div>
+        <div class="panel-body" id="extended2">
+            <ul>
+                <h2>Logging in and Signing up</h2>
+                <ul>
+                    <li>The web app implements a username and password authentication system that is shared with the mobile app through an API. Associated with their profile, each user might have a set of savings accounts, sole owned premium bonds, syndicates that they manage, and syndicates that they are part of. </li>
+                </ul></li>
+                <h2>Creating Syndicates</h2>
+                <ul>
+                    <li>On the web app, users can easily create syndicates and add other users to them. They can give the syndicate a name and then start investing. </li>
+                </ul></li>
+                <h2>Managing Syndicates</h2>
+                <ul>
+                    <li>A syndicate owner can change the name of the syndicate at any time, and also add/remove members to/from the team. </li>
+                </ul></li>
+                <h2>Buying and Selling Group Owned Premium Bonds</h2>
+                <ul>
+                    <li>Within a syndicate, a user can purchase premium bonds. Once purchased, the user can see how much of a stake they have in a group, and thus what proportion of the winnings they should expect to receive, should the group win. </li>
+                </ul></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading extender" id="extender3">Backend/API</div>
+        <div class="panel-body" id="extended3">
+            <ul>
+                <h2>Authentication and User Profiles</h2>
+                <ul>
+                    <li>We implement authentication using a simple username/password. In the backend, we have a User object that consists of this username and password, as well as more information including the user’s name and email. Associated with each User object is a UserProfile object. This includes further information such as the user’s language, security question and answer, and premium bond winnings.</li>
+                    <li>Authentication on the REST API is achieved through tokens. Each User has an associated REST Auth token. The token is obtained by the app by “posting” to the “login” endpoint of the API with the user’s credentials. Upon successful authentication, the token is sent back to the app. This token is subsequently included in every request made by the app within a HTTP header. This is used to identify and thus authenticate the user when the backend receives API requests from the mobile app. </li>
+                </ul></li>
+                <h2>Creating, Viewing and Updating Accounts</h2>
+                <ul>
+                    <li>Our mobile app allows the user to create, view and manage simulated versions of NS&I’s savings products (direct savers, income bonds etc.) </li>
+                    <li>Accounts are stored as objects in our database. For each different type of account (direct savers etc.), we have a static object in our ProductInfo table that contains the features of that account type (i.e. interest rate, minimum deposit etc.). Each account is linked to one of these static ProductInfo objects. Each account then also has a balance, and a link to the User that owns the account.</li>
+                    <li>The API includes endpoints to allow for account creation, modification and reading. </li>
+                    <li>Creation is achieved through a (authenticated) “post” request to the “accounts” endpoint with a JSON object specifying the account type (i.e. direct saver etc.). The backend will then initialise and save a new account of that type with balance 0 with the authenticated user as the owner.</li>
+                    <li>The API user can access accounts in two ways. If they run an authenticated “get” request on the “accounts” endpoint, they will receive a concise list of all of the authenticated users’ accounts. If they run a “get” request on the “account/<id>/” endpoint, they will receive detailed information about the account with the specified id (provided they are the owner of that account).</li>
+                    <li>Modification is achieved through 3 endpoints for deposits, withdrawals and transfers to/from/between accounts. All of these are extensions of the “account/<id>/” endpoint. The deposit and withdrawal endpoint both accept “post” requests with an “amount” specified in the JSON object. Obviously this is the amount to be deposited or withdrawn. The transfer endpoint is the same except it takes a “destination” (id of the destination account) as a parameter as well. </li>
+                </ul></li>
+                <h2>Syndicates</h2>
+                <ul>
+                    <li>Syndicates are stored as objects in our database. Syndicates have a User owner, a name, total winnings, and a set of Users (the syndicate members). The membership relationship is a many-to-many relationship and is implemented by Django using a third (hidden) user-syndicate table that maps users to the syndicates they are members of. To check if a User belongs to a Syndicate, this table is queried to see if there is one row with both the User and the Syndicate.</li>
+                    <li>The API exposes Syndicates to creation and read operations. API users can post to the “Syndicates” endpoint with the name of the new syndicate and a list of emails to create a new syndicate with that name and those users with those emails as members. The API user can run a “get” request on “syndicates” to get a list of the syndicates that the user is part of. The “syndicate/<id>/” endpoint will give more detail about a specific syndicate with id=id including a list of members, their shares in the syndicate, the total group investment and total group winnings.</li>
+                </ul></li>
+                <h2>Premium Bonds</h2>
+                <ul>
+                    <li>Each individual premium bond (sole or group owned) is represented as a single object in the database. </li>
+                    <li>Sole owned bonds are associated with their user-owner, while group owned bonds are associated with both their group-owners and the user who purchased the bond within the group. This is done to keep track of how much each user has invested in the group.</li>
+                    <li>The API has multiple endpoints that allow users to view and manage their premium bonds. The user can run a “get” request on “user/bonds” to see the amount of sole-owned bonds they own and see their winnings. They can “post” to this endpoint with an “amount” and “transaction_kind” to buy or sell sole-owned bonds. Similar operations are available on the “syndicate/<id>/bonds” endpoint, except they relate to group owned bonds within the syndicate with id=id.</li>
+                </ul></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- end main text-->
+
+    <!--footer starts-->
+</div>
+<div id="footer"></div>
+<script>
+    $('#footer').load('other/footer.html')
+</script>
+</body>
+</html>

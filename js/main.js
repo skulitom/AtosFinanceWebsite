@@ -50,19 +50,19 @@ document.getElementById("navMenu").innerHTML =
     '<a href="Background.html"><span class="glyphicon glyphicon-education"></span> Background' +
     '</li>'+
     '<li>'+
-    '<a href="Project.html"><span class="gglyphicon glyphicon-cog"></span> Project' +
+    '<a href="Project.html"><span class="glyphicon glyphicon-cog"></span> Project' +
     '</li>'+
     '<li>'+
     '<a href="Plans.html"><span class="glyphicon glyphicon-calendar"></span> Plans' +
     '</li>'+
     '<li>'+
-    '<a href="Development.html"><span class="glyphicon glyphicon-pushpin"></span> Development' +
+    '<a href="Development.html"><span class="glyphicon glyphicon-wrench"></span> Development' +
     '</li>'+
     '<li>'+
     '<a href="Prototype.html"> <span class="glyphicon glyphicon-gift"></span> Prototype' +
     '</li>'+
     '<li>'+
-    '<a href="Solution.html"><span class="glyphicon glyphicon-asterisk"></span> Solution' +
+    '<a href="Solution.html"><span class="glyphicon glyphicon-filter"></span> Solution' +
     '</li>'+
     '</ul>'+
     '</div>'+

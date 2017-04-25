@@ -552,6 +552,28 @@
                 <li>Better stability</li>
 
             </ul>
+
+            <h3>Actual Testing</h3>
+            <hr>
+            <p>
+                We tested our applications using a variety of methods. First and foremost, we tested our applications with our users, allowing them to use the app
+                and give feedback about their experience. Second, we did manual testing. We inspected different aspects of our products in different conditions to
+                assert if they behaved correctly. Finally we used automated testing to test both our API and the mobile app. These tests picked out flaws that would
+                have otherwise gone unnoticed. XamarinUITest was used to create methods to interact with the user interface just as a user would, enter text, tapping
+                buttons, and performing gestures, such as swipes, to test for any memory leaks. APIRequestFactory was used to run good and bad requests on the server
+                and see if it responds as expected.
+                <br><br>
+                From our focus groups, some of the main concerns were about the user interface, inability to apply for new products through the mobile application and
+                the information page of the project as it was a web wrapper of the particular product page in the application. We weren't able to address all issues
+                and those that were left unaddressed have been added to our future thoughts. From manual and automated testing, we discovered that some end points in
+                API weren't secured properly due to the lack of an authentication token so someone could view another user's bonds which is meant to be confidential
+                information. The mobile application had no functional issues and passed both tests.
+                <br><br>
+                <b>Focus Group Results:</b><br><br>
+                <a href="https://docs.google.com/document/d/1v4zkaUOrMCdt6iHRy_p7AWt40b0yP2g-ZETuI0eHk7k/edit?usp=sharing"> Focus Group</a> <br>
+                <br><br>
+
+            </p>
         </div>
     </div>
 
@@ -583,14 +605,16 @@
     <div class="panel panel-primary">
         <div class="panel-heading extender" id="extender5">Requirements Results</div>
         <div class="panel-body" id="extended5">
-            <p>
-                <ul>
-                    <li><span style="font-weight: bold">Green: </span> Done</li>
-                    <li><span style="font-weight: bold">Yellow: </span>Unsure, May reqire clarification in the future</li>
-                    <li><span style="font-weight: bold">Red: </span> Not Completed</li>
-                </ul>
-            </p>
+
             <h3>MoSCoW Analysis</h3>
+            <p>
+                <b>Key:</b><br>
+            <ul>
+                <li><span style="font-weight: bold">Green: </span> Done</li>
+                <li><span style="font-weight: bold">Yellow: </span>Unsure, May reqire clarification in the future</li>
+                <li><span style="font-weight: bold">Red: </span> Not Completed</li>
+            </ul>
+            </p>
             <table class="table">
                 <thead>
                 <tr>
@@ -672,6 +696,39 @@
                 </tr>
                 </tbody>
             </table>
+            <h3>Tangible Deliverables</h3>
+            <hr>
+            <ul>
+                <li>Mobile application for NS&I
+                    <ul>
+                        <li>Log in screen &#10004;</li>
+                        <li>Interface to manage and open savings accounts &#10004;</li>
+                        <li>Interface to buy and check sole owned premium bonds &#10004;</li>
+                        <li>Interface to manage group owned premium bonds
+                            <ul>
+                                <li>Join groups &#10004;</li>
+                                <li>Create groups &#10004;</li>
+                                <li>Contribute to groups &#10004;</li>
+                                <li>Check winnings &#10004;</li>
+                            </ul></li>
+                    </ul></li>
+                <li>Web interface to allow users to interact with group owned premium bonds
+                    <ul>
+                        <li>Join groups &#10004;</li>
+                        <li>Create groups &#10004;</li>
+                        <li>Contribute to groups< &#10004;</li>
+                        <li>Check winnings &#10004;</li>
+                    </ul></li>
+                <li>Back-end information system to store data to be shared across both systems.
+                    <ul>
+                        <li>User accounts must be consistent across app and web interface &#10004;</li>
+                    </ul></li>
+            </ul>
+
+            <br><br>
+            <p>In the end we have fulfilled all the Musts and Should have requirements that our client has requested. Some of these may still require some
+            clarification however judging from the enthusiasm of our client he is very happy with the end result. If we would have had more time we would finish all the could
+            haves of our project, but we have to consider it the way it is right now. Overall both the web application and the phone application are done to the standard that the client has expected.</p>
 
         </div>
     </div>
